@@ -1,0 +1,472 @@
+@import  'mainanimation';
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+   
+
+}
+
+.title{
+    background-color:rgb(20, 12, 65);
+    color: rgb(236, 233, 233);
+    
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    animation-name: widthcolorheight  ;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    font-family: monospace;
+    
+
+}
+.word{
+    animation-name: words;
+    animation-duration: 10s;
+    animation-play-state: running;
+    
+
+}
+
+
+.scenery{
+
+    width: 1366px ;
+    height: 910px;
+    font-size:2vw;
+    border: 1px solid black;
+    background-image: url("https://media.gettyimages.com/photos/rural-landscape-picture-id162127497?s=2048x2048");
+    background-size: cover;
+    ;
+   
+
+               
+    position: absolute;
+    display: flex;
+  align-items: ceil($number: 3);
+    justify-content: center;
+    z-index: 2;
+    
+
+
+}
+.scenery3{
+    
+    width: 1366px ;
+    height: 910px;
+    font-size:2vw;
+    border: 1px solid rgb(0, 0, 0);
+    background-image: url("https://c1.wallpaperflare.com/preview/691/103/677/pattern-triangle-geometric-minimal.jpg");
+    background-size: cover;
+    
+   
+
+   
+   z-index:-1;
+               
+    position: absolute;
+    display: flex;
+  align-items: ceil($number: 3);
+    justify-content: center;
+
+
+}
+.scenery4{
+    
+    width: 1366px ;
+    height: 910px;
+    font-size:2vw;
+    border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.973);
+    background-size: cover;
+   ;
+   color: white;
+
+   transform: translateX(162px);
+   bottom: 40px;
+   z-index:-2;
+               
+    position: absolute;
+    display: flex;
+  align-items: ceil($number: 3);
+    justify-content: center;
+
+
+}
+.scenery2{
+    
+    width: 1366px ;
+    height: 910px;
+    font-size:2vw;
+    border: 1px solid black;
+background-image: url("https://media.gettyimages.com/photos/nandi-bull-lepakshi-india-picture-id516397951?s=2048x2048");
+    background-size: cover;
+   ;
+
+   
+ 
+   z-index:1;
+               
+    position: absolute;
+    display: flex;
+  align-items: ceil($number: 3);
+    justify-content: center;
+
+
+}
+.sceney{
+    
+    animation-name:icon;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+
+  
+
+
+    
+
+}
+.white{
+    background-color: white;
+    height: fit-content;
+    width: 300px;
+    padding: 10px;
+    font-family:cursive;
+    transform: translateY(200px);
+    border: 2px solid black 
+
+    ;
+    margin: 2px;
+    font-weight: 100;
+    line-height: 50px;
+   
+    
+}
+
+@keyframes icon{
+    from{
+        transform: translateY(0) rotate(0);
+    }
+    to{
+        transform: translateY(0) rotate(360deg);
+    }
+}
+.box1{
+    display: flex;
+    position: absolute;
+    width: 320px;
+    height: fit-content;
+    border: 2px solid black;
+    transform: translateX(1000px);
+    bottom: 100px;
+  
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 10px;
+    text-decoration: none;
+  
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+
+    
+
+ 
+
+
+}
+.box1{
+    animation-name: colorwap;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;  
+    display: none; 
+}
+@keyframes colorwap{
+    0%{
+        border-bottom: 5px solid red;
+        border-top:5px solid rgb(252, 7, 231);
+        border-left:5px solid rgb(0, 195, 255);
+        border-right: 5px solid greenyellow;
+        
+        
+    }
+    20%{
+        border-top: 5px solid red;
+        border-bottom:5px solid rgb(252, 7, 231);
+        border-right:5px solid rgb(0, 195, 255);
+        border-left: 5px solid greenyellow;
+        
+        
+    }
+    60%{
+        
+            border-top: 5px solid red;
+            border-bottom: 5px solid greenyellow;
+            border-right:5px solid rgb(0, 195, 255);
+            border-left: 5px solid rgb(252, 7, 231);
+            
+            
+        
+    }
+    80%{
+        border-top: 5px solid red;
+        border-bottom:5px solid rgb(252, 7, 231);
+        border-right:5px solid rgb(0, 195, 255);
+        border-left: 5px solid greenyellow;
+        
+        
+    }
+    100%{
+        border-bottom: 5px solid red;
+        border-top:5px solid rgb(252, 7, 231);
+        border-left:5px solid rgb(0, 195, 255);
+        border-right: 5px solid greenyellow;
+        
+        
+    }
+}
+ol{
+    list-style: none;
+    padding: 5px;
+
+}
+li{
+    padding: 5px;
+    border-bottom: solid 1px white;
+    width: 270px;
+    text-align: center;
+   
+}
+li:hover{
+    animation-name: colorswap;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+@keyframes colorswap{
+    0%{
+        border-bottom: solid 1px rgb(0, 217, 255);
+        color:  rgb(0, 217, 255);
+        
+
+
+    }
+    30%{
+        border-bottom: solid 1px rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+        
+
+    }60%{
+        border-bottom: solid 1px rgb(253, 236, 0);
+       color: rgb(253, 236, 0);
+
+    }90%{
+        border-bottom: solid 1px rgb(250, 4, 217);
+       color:rgb(250, 4, 217);
+
+
+    }
+    100%{
+        border-bottom: solid 1px rgb(4, 250, 86);
+       color:rgb(4, 250, 86);
+
+
+    }
+
+}
+
+.x{
+    padding: 5px;
+    
+    width: 270px;
+    text-align: center;
+}
+.infoap{
+    width: 330px;
+    height: 460px;
+    padding: 20px;
+   
+    transform: translate(-25px,20px);
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+    font-size: 1.4vw;
+    line-height: 40px;
+
+
+}
+.infoap:hover{
+    width: 340px;
+    height: 470px;
+   animation-name: mm;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes mm{
+    40%{
+        color: yellow;
+    }
+    20%{
+        color: rgb(0, 217, 255);
+    }60%{
+        color: rgb(255, 0, 0);
+    }80%{
+        color: rgb(255, 0, 234);
+    }100%{
+        color: rgb(0, 255, 42);
+    }
+}
+.food{
+    background-color: rgba(0, 0, 0, 0.767);
+   width: 900px;
+   height: 460px;
+   transform: translateY(20px);
+   padding: 20px;
+   line-height: 40px;
+   color: white;
+   overflow-y: scroll;
+
+}
+td{
+    border: rgb(255, 255, 255) 1px solid;
+   width: 900px;
+   padding: 30px;
+   font-size: 20px;
+
+
+}
+th{
+    border: rgb(255, 255, 255) 1px solid;
+   width: 10px;
+   padding: 30px;
+   font-size: 20px;
+
+
+}
+caption{
+    position: sticky ;
+    
+
+}
+img{
+    transform: translateY(20px);
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transform-origin: center;
+}
+tr:hover{
+  animation-name: mm;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+.book{
+
+    display: block;
+    border: 2px solid black;
+    width: 350px;
+    height: 480px;
+    font-size: 20px;
+    transform: translate(150px,30px);
+    background-color: white;
+    padding: 10px;
+    z-index: 2;
+    
+    
+
+
+}
+.books{
+
+    display: block;
+    border: 2px solid black;
+    width: 350px;
+    height: 480px;
+    font-size: 20px;
+    transform: translate(-533px,30px);
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+    
+    
+
+
+}
+.bookns{
+
+    display: block;
+    border: 2px solid black;
+    width: 350px;
+    height: 480px;
+    font-size: 20px;
+    transform: translate(-533px,30px);
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+    
+    
+
+
+}
+#bluebox{
+    background-color: rgba(0, 0, 255, 0.836);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border: 2px solid white;
+    transform: translateX(50px);
+    
+}
+#mark{
+    color:rgb(0, 0, 255);
+    font-weight: 100;
+    padding: 6px;
+    float: left;
+    
+
+
+
+
+
+}
+#bluebo{
+    background-color: rgba(0, 0, 255, 0.836);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    border: 2px solid white;
+    transform: translateX(40px);
+}
+    
+.bluebom{
+        background-color: rgba(0, 0, 255, 0.836);
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        border: 2px solid white;
+        transform: translate(260px,-10px);
+
+    
+
+    
+}
+
+    
+    
+    
+ 
+    

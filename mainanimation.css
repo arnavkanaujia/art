@@ -1,0 +1,84 @@
+@-webkit-keyframes words {
+  0% {
+    -webkit-transform: translate(26vmax, 20vmax);
+            transform: translate(26vmax, 20vmax);
+  }
+  100% {
+    -webkit-transform: translate(26vmax, 20vmax);
+            transform: translate(26vmax, 20vmax);
+  }
+}
+
+@keyframes words {
+  0% {
+    -webkit-transform: translate(26vmax, 20vmax);
+            transform: translate(26vmax, 20vmax);
+  }
+  100% {
+    -webkit-transform: translate(26vmax, 20vmax);
+            transform: translate(26vmax, 20vmax);
+  }
+}
+
+@-webkit-keyframes widthcolorheight {
+  0% {
+    height: 60vmax;
+    background-color: black;
+    color: white;
+  }
+  10% {
+    background-color: #f30000;
+    color: #3b92a8;
+  }
+  20% {
+    background-color: #0f490f;
+    color: #d3d380;
+  }
+  30% {
+    background-color: white;
+    color: black;
+  }
+  40% {
+    background-color: black;
+    color: white;
+  }
+  50% {
+    background-color: #080833;
+    color: red;
+  }
+  100% {
+    height: 4vmax;
+  }
+}
+
+@keyframes widthcolorheight {
+  0% {
+    height: 60vmax;
+    background-color: black;
+    color: white;
+  }
+  10% {
+    background-color: #f30000;
+    color: #3b92a8;
+  }
+  20% {
+    background-color: #0f490f;
+    color: #d3d380;
+  }
+  30% {
+    background-color: white;
+    color: black;
+  }
+  40% {
+    background-color: black;
+    color: white;
+  }
+  50% {
+    background-color: #080833;
+    color: red;
+  }
+  100% {
+    height: 4vmax;
+  }
+}
+/*# sourceMappingURL=mainanimation.css.map */

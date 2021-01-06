@@ -1,0 +1,58 @@
+@keyframes words{
+    0%{
+        transform: translate(26vmax,20vmax);
+
+    }
+    100%{
+        
+            transform: translate(26vmax,20vmax);
+    
+        
+    }
+  
+}
+@keyframes widthcolorheight{
+    0%{
+        height: 60vmax;
+        background-color: black;
+        color: white;
+    }
+    10%{
+        background-color: rgb(243, 0, 0);
+        color: rgb(59, 146, 168);
+
+    }
+    20%{
+        background-color:rgb(15, 73, 15);
+        color: rgb(211, 211, 128);
+
+    }
+    30%{
+        
+
+        background-color:rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        
+
+
+    }
+    40%{
+        background-color: black;
+        color: white;
+        
+        
+
+
+    }
+    50%{
+        background-color: rgb(8, 8, 51);
+        color: rgb(255, 0, 0);
+       
+    }
+  
+    
+    100%{
+        height: 4vmax;
+    }
+    
+}
